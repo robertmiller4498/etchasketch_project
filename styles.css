@@ -1,0 +1,13 @@
+/*Need to target overall container to align grid, and then target cells to make each one identical*/
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+#myCells {
+    height: 20px;
+    width: 20px;
+}
