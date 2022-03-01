@@ -12,6 +12,19 @@ board.insertAdjacentElement('beforeend', square);
 }
 
 //Mousehover work
+//Thought process: I need to develop an if/and statement in regards to what will happen when the mouse enters/exits each square.
+//This process is almost working, currently producing a syntax error. Try and bring them together more cohesively.
+
+board.addEventListener('mouseenter', mouseEnter);
+board.addEventListener('mouseleave', mouseLeave);
+
+function mouseEnter() {
+    document.getElementById(square).style.backgroundColor = 'light grey';
+}
+function mouseLeave() {
+    document.getElementById(square).style.backgroundColor = 'black';
+}
+
 
 
 
