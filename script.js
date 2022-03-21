@@ -23,7 +23,7 @@ board.insertAdjacentElement('beforeend', square);
 //Thought process: I need to develop an if/and statement in regards to what will happen when the mouse enters/exits each square.
 //This process is almost working, currently producing a syntax error. Try and bring them together more cohesively.
 
-for (let i = 0; i<256; i++) {
+/* for (let i = 0; i<256; i++) {
     square[i].addEventListeners(mouseenter, funciton(), {
         if (mouseenter) {
             return square.style.backgroundColor = ''
@@ -33,27 +33,5 @@ for (let i = 0; i<256; i++) {
         if (mouseleave) {
             return square.style.backgroundColor = 'black'
         }
-    });
+    }); */
 
-/* board.addEventListener('mouseenter', mouseEnter);
-board.addEventListener('mouseleave', mouseLeave);
-
- function mouseEnter() {
-    let squareAll = document.querySelectorAll('square');
-    alert(square.style.backgroundColor = 'light grey');
-}
-function mouseLeave() {
-    let squareAll = document.querySelectorAll('square');
-    alert(square.style.backgroundColor = '');
-}
-
-//if (eventtype === 'mouseover') {
-    //event.target.style.backgroundColor = 'light grey';
-//}
-//if (eventtype === 'mouseout') {
-    //event.target.style.backgroundColor = '';
-//}
-
-
-
- */
