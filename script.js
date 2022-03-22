@@ -10,7 +10,20 @@ board.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 //256 is 16x16
 
 
+//This portion makes the etch-a-sketch functional
+board.onmouseover = function(event) {
+    let target = event.target;
+    target.style.backgroundColor = "light grey";
+}
+
+board.onmouseout = function(event) {
+    let target = event.target;
+    target.style.backgroundColor = "black";
+}
+let input = document.getElementById("input").vaule; 
+let size = input;
 let amount = size * size;
+
 //This portion creates our grid 
 for(let i = 0; i < amount; i++) {
  let square = document.createElement('div');
@@ -23,7 +36,7 @@ for(let i = 0; i < amount; i++) {
 populateBoard(16); 
 
 function changeSize(input) {
-    if(input >= 1 || <= 100) {
+    if((input >= 1) || (input <= 100)) {
         populateBoard(input);
     } else {
         return "Error! Input is not between 1-100";
@@ -31,13 +44,3 @@ function changeSize(input) {
 }
 
 
-//This portion makes the etch-a-sketch functional
-board.onmouseover = function(event) {
-    let target = event.target;
-    target.style.backgroundColor = "light grey";
-}
-
-board.onmouseout = function(event) {
-    let target = event.target;
-    target.style.backgroundColor = "black";
-}
