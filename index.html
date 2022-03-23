@@ -19,10 +19,9 @@
              </div>
          </div>
          <div>
-             <input type ="text" class ="input" value = 16 onchange = "changeSize(this.value)"/>
-             <input type ="text" id = "input" placeholder="Size of Board" value = 16 onchange = "changeSize(this.value)"/>
-             <!---get rid of onchange or figure out how to proeprly use it-->
-             <button>Set Size</button>
+             <!-- <input type ="text" placeholder="Size of Board" value = 16 onchange = "changeSize(this.value)"/> -->
+             <!---this.value equals whatever value you type into the input type value field-->
+             <button id ="clearGrid" onclick = userInput>Reset grid and customize size</button>
          </div>
     </body>
     <script src="script.js"></script>
