@@ -6,23 +6,21 @@
     </head>
     <body>
         <div class="grid-container">
-            <div class="title"><h1>Sketchpad</h1></div>
+            <div class="title"><h1>Etch-a-Sketch</h1></div>
             <div class="content">
                 <div class="board">
-                <div class="buttons">
-                    <!-- <button>Black</button>
-                    <button>White</button>
-                    <button>Random</button>
-                    <button>Reset</button> -->
-                </div>
             </div>
              </div>
          </div>
-         <div>
+         <form id="form">
+         <div class="button">
              <!-- <input type ="text" placeholder="Size of Board" value = 16 onchange = "changeSize(this.value)"/> -->
              <!---this.value equals whatever value you type into the input type value field-->
-             <button id ="clearGrid" onclick = userInput>Reset grid and customize size</button>
-         </div>
+             
+             <button onclick="clearGrid()">Reset grid and customize size</button>
+             
+        </div>
+        </form>
     </body>
     <script src="script.js"></script>
 </html>
