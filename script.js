@@ -9,7 +9,7 @@ let amount = userInput * userInput;
 for(let i = 0; i < amount; i++) {
     let square = document.createElement('div');
     square.classList.add("square");
-    square.style.backgroundColor = "blue";
+    square.style.backgroundColor = "grey";
     board.insertAdjacentElement("beforeend", square);
 };
     
@@ -44,7 +44,7 @@ let amount = userInput * userInput;
 for(let i = 0; i < amount; i++) {
     let square = document.createElement('div');
     square.classList.add("square");
-    square.style.backgroundColor = "blue";
+    square.style.backgroundColor = "grey";
     board.insertAdjacentElement("beforeend", square);
 };
     
